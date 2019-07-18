@@ -1,15 +1,7 @@
 package cn.biosan.cloud.tracer.filter;
 
 import cn.biosan.cloud.tracer.utils.MdcUtils;
-import com.alipay.common.tracer.core.SofaTracer;
-import com.alipay.common.tracer.core.configuration.SofaTracerConfiguration;
-import com.alipay.common.tracer.core.context.span.SofaTracerSpanContext;
 import com.alipay.common.tracer.core.generator.TraceIdGenerator;
-import com.alipay.common.tracer.core.registry.ExtendFormat;
-import com.alipay.common.tracer.core.span.SofaTracerSpan;
-import com.alipay.common.tracer.core.utils.StringUtils;
-import com.alipay.sofa.tracer.plugins.springmvc.SpringMvcHeadersCarrier;
-import com.alipay.sofa.tracer.plugins.springmvc.SpringMvcTracer;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
@@ -18,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 import java.io.IOException;
-import java.util.Enumeration;
 import java.util.HashMap;
 
 /**
