@@ -1,0 +1,2 @@
+traceProviderFilter=cn.biosan.cloud.tracer.filter.TraceProviderFilter
+traceConsumerFilter=cn.biosan.cloud.tracer.filter.TraceConsumerFilter
