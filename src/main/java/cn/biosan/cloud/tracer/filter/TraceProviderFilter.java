@@ -28,8 +28,6 @@ public class TraceProviderFilter implements Filter {
         try{
             result = invoker.invoke(invocation);
         } finally {
-//            // 消费方未引入时，不会进行sr，ss会直接handle return
-//            dubboServerTracer.serverSend("200");
             logger.info("TraceProviderFilter after invoke");
         }
         return result;
