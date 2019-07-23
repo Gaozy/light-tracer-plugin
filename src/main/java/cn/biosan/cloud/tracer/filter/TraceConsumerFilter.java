@@ -37,7 +37,7 @@ public class TraceConsumerFilter implements Filter {
         try {
             result = invoker.invoke(invocation);
         } finally {
-            logger.info("TraceConsumerFilter after invoke");
+//            logger.info("TraceConsumerFilter after invoke");
         }
         return result;
     }

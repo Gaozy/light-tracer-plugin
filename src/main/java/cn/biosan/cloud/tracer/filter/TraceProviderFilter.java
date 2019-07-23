@@ -28,7 +28,7 @@ public class TraceProviderFilter implements Filter {
         try{
             result = invoker.invoke(invocation);
         } finally {
-            logger.info("TraceProviderFilter after invoke");
+//            logger.info("TraceProviderFilter after invoke");
         }
         return result;
     }
